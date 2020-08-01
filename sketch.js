@@ -11,7 +11,7 @@ function setup() {
   movingRect = createSprite(35, 190,50,30);
   movingRect.shapeColor = "green";
   movingRect.debug = false;
-  speed  = random(55,190);
+  speed  = random(55,90);
   weight = random(400,1500);
 
   movingRect.velocityX = speed;
@@ -32,13 +32,14 @@ function draw() {
  } 
 
  
+ d = (speed * weight *speed*0.5)/22500
 
-if(d <= 80){
+if(d < 100){
   movingRect.shapeColor = "green";
   fixedRect.shapeColor = "green";
 }
 
-if(d >= 81 && d <= 180){
+if(d >= 100 && d < 180){
   movingRect.shapeColor = "yellow";
   fixedRect.shapeColor = "yellow";
 
@@ -50,7 +51,7 @@ if(d > 180){
 
 }
 
-d = (speed * weight *speed*0.5)/22500
+
 
 
 
