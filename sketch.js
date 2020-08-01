@@ -6,11 +6,11 @@ var d;
 function setup() {
   createCanvas(1200,400);
   fixedRect = createSprite(1000,190, 50, 80);
-  fixedRect.shapeColor = "black";
-  fixedRect.debug = true;
-  movingRect = createSprite(35, 190,50,30);
-  movingRect.shapeColor = "green";
-  movingRect.debug = false;
+  fixedRect.shapeColor = "grey";
+  //fixedRect.debug = true;
+  movingRect = createSprite(35, 190,35,35);
+  movingRect.shapeColor = "white";
+  //movingRect.debug = false;
   speed  = random(55,90);
   weight = random(400,1500);
 
@@ -36,18 +36,18 @@ function draw() {
 
 if(d < 100){
   movingRect.shapeColor = "green";
-  //fixedRect.shapeColor = "green";
+  
 }
 
 if(d >= 100 && d < 180){
   movingRect.shapeColor = "yellow";
-  //fixedRect.shapeColor = "yellow";
+  
 
 }
 
 if(d > 180){
   movingRect.shapeColor = "red";
-  //fixedRect.shapeColor = "red";
+  
 
 }
 
