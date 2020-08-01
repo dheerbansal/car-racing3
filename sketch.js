@@ -15,7 +15,7 @@ function setup() {
   weight = random(400,1500);
 
   movingRect.velocityX = speed;
-  console.log(movingRect.velocityX);
+ // console.log(movingRect.velocityX);
 
   
   
@@ -36,18 +36,18 @@ function draw() {
 
 if(d < 100){
   movingRect.shapeColor = "green";
-  fixedRect.shapeColor = "green";
+  //fixedRect.shapeColor = "green";
 }
 
 if(d >= 100 && d < 180){
   movingRect.shapeColor = "yellow";
-  fixedRect.shapeColor = "yellow";
+  //fixedRect.shapeColor = "yellow";
 
 }
 
 if(d > 180){
   movingRect.shapeColor = "red";
-  fixedRect.shapeColor = "red";
+  //fixedRect.shapeColor = "red";
 
 }
 
