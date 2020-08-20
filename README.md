@@ -1,2 +1,2 @@
-# bounceOffAlgorithm
-Algorithm to bounce off two objects
+# synchronousBallMovement
+Ball moving synchronously
