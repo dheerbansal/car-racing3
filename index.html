@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Zen</title>
+    <title>Multiplayer Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
@@ -11,34 +11,25 @@
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDfv7F8cQMMHwlSrobPEr41mkhdhCxxmRY",
+        authDomain: "car-racing--multiplayer-fe3f9.firebaseapp.com",
+        databaseURL: "https://car-racing--multiplayer-fe3f9.firebaseio.com",
+        projectId: "car-racing--multiplayer-fe3f9",
+        storageBucket: "car-racing--multiplayer-fe3f9.appspot.com",
+        messagingSenderId: "429006641622",
+        appId: "1:429006641622:web:654addc0209aae6a6fec77"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDfv7F8cQMMHwlSrobPEr41mkhdhCxxmRY",
-    authDomain: "car-racing--multiplayer-fe3f9.firebaseapp.com",
-    databaseURL: "https://car-racing--multiplayer-fe3f9.firebaseio.com",
-    projectId: "car-racing--multiplayer-fe3f9",
-    storageBucket: "car-racing--multiplayer-fe3f9.appspot.com",
-    messagingSenderId: "429006641622",
-    appId: "1:429006641622:web:654addc0209aae6a6fec77"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-
-
-
-
-    
-        <script src="js/Form.js"></script>
-        <script src="js/Game.js"></script>
-        <script src="js/Player.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
